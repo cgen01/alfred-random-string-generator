@@ -64,7 +64,7 @@ function generate_string( $query ) {
 	
 	$key = str_repeat( $key, $query[0] );
 	
-	$key = substr( str_shuffle( $key ), 0, $query[0] );
+	$key = substr( str_shuffle( $key ), 0, str_replace('\\', '', $query[0]) );
 	
 	/**
 	 * Create and copy the string.
