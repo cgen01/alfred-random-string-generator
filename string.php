@@ -40,7 +40,7 @@ function generate_string( $query ) {
 	 * 
 	 * @since 1.0.0
 	*/
-	if ( $query[1] ) {
+	if ( count($query) > 1 ) {
 		if ( 'u' == $query[1] ) {
 			$key = $params['upper'];
 		} else if ( 'l' == $query[1] ) {
